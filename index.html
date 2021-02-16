@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Header-menu</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="reset.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header class="flex flex--between">
+                <nav class="flex">
+                    <div class="burger-menu">
+                        <a href="" class="burger-menu_button">
+                            <span class="burger-menu_lines"></span>
+                        </a>
+                        <ul class="menu__list flex">
+                            <li class="menu__item">
+                                <a
+                                    href="#"
+                                    class="menu__link menu__link--dropdown"
+                                    >Home</a
+                                >
+                                <ul class="menu__sub-menu">
+                                    <li class="menu__sub-item">
+                                        <a href="#" class="menu__sub-link"
+                                            >Home_1</a
+                                        >
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a href="#" class="menu__sub-link"
+                                            >Home_2</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">About</a>
+                                <ul class="menu__sub-menu">
+                                    <li class="menu__sub-item">
+                                        <a href="#" class="menu__sub-link"
+                                            >About_1</a
+                                        >
+                                    </li>
+                                    <li class="menu__sub-item">
+                                        <a href="#" class="menu__sub-link"
+                                            >About_2</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Contacts</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Partners</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Carrer</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="menu__panel flex">
+                    <div class="search__bar flex flex--ver-center">
+                        <form
+                            class="search__form"
+                            role="search"
+                            method="get"
+                            id="searchform"
+                            action=""
+                        >
+                            <input
+                                type="text"
+                                value=""
+                                placeholder="search"
+                                class="search__input"
+                                id="s"
+                            />
+                        </form>
+                    </div>
+
+                    <div id="switch-lang" class="menu__language">
+                        <img
+                            class="menu__img fr"
+                            src="https://cdn3.iconfinder.com/data/icons/finalflags/64/France-Flag.png"
+                        />
+                        <img
+                            class="menu__img en"
+                            src="https://cdn3.iconfinder.com/data/icons/finalflags/64/United-Kingdom-flag.png"
+                        />
+                    </div>
+                </div>
+            </header>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
